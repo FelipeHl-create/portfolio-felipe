@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Felipe Hidalgo | Portfólio</title>
+    
+    <link rel="stylesheet" href="css/style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio">
+            <div class="inicio-content">
+                <img src="assets/foto-de-perfil.jpg" alt="Foto" class="profile-pic">
+                <h1></h1> 
+                <p>Operador de máquinas em transição de carreira para a área de Tecnologia da Informação.</p>
+            </div>
+        </section>
+
+        <section id="sobre">
+            <div class="sobre-content">
+                <h2>Sobre Mim</h2>
+                <p>
+                    Atualmente, trabalho como operador de máquinas, mas minha verdadeira paixão está na tecnologia. Estou a trilhar um novo caminho, dedicando-me aos estudos em <strong>Engenharia de Software</strong> para construir uma carreira sólida na área de TI. Sou um autodidata esforçado, sempre pronto para aprender e superar desafios.
+                </p>
+                <div class="sobre-details">
+                    <div class="detail-item">
+                        <h3>Paixões e Hobbies</h3>
+                        <ul>
+                            <li>Idiomas: Árabe, Inglês (Avançado) e Alemão.</li>
+                            <li>Hobbies: Skateboard, video games e tocar instrumentos musicais.</li>
+                        </ul>
+                    </div>
+                    <div class="detail-item">
+                        <h3>Educação</h3>
+                        <ul>
+                            <li>Engenharia de Software (Cursando)</li>
+                            <li>Outros cursos na área de tecnologia.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projetos">
+            <div class="projetos-content">
+                <h2>Meus Projetos</h2>
+                <div class="projetos-grid">
+                    <div class="projeto-card">
+                        <h3>Projeto Na Estrada</h3>
+                        <p>Um site informativo para caminhoneiros, desenvolvido com HTML e CSS. Como o site não está publicado, você pode ver o código-fonte completo clicando abaixo.</p>
+                         <button id="open-code-modal" class="btn-ver-codigo">Ver Código-Fonte</button>
+                    </div>
+                    
+                    <div class="projeto-card">
+                        <h3>Nome do Projeto 2</h3>
+                        <p>Uma breve descrição do que este projeto faz, as tecnologias usadas e o seu propósito.</p>
+                        <a href="https://github.com/FelipeHl-create/nome-do-repositorio-2" target="_blank">Ver no GitHub</a>
+                    </div>
+
+                    <div class="projeto-card">
+                        <h3>Nome do Projeto 3</h3>
+                        <p>Uma breve descrição do que este projeto faz, as tecnologias usadas e o seu propósito.</p>
+                        <a href="https://github.com/FelipeHl-create/nome-do-repositorio-3" target="_blank">Ver no GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato">
+            <div class="contato-content">
+                <h2>Entre em Contato</h2>
+                <p>Estou à procura de novas oportunidades e adoraria conectar-me consigo. <br> Envie-me uma mensagem!</p>
+                <div class="social-links">
+                    <a href="https://github.com/FelipeHl-create" target="_blank" title="GitHub">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub">
+                    </a>
+                    <a href="https://www.linkedin.com/in/luiz-felipe-hidalgo-49b86825b" target="_blank" title="LinkedIn">
+                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-plain.svg" alt="LinkedIn">
+                    </a>
+                    <a href="https://www.instagram.com/perafeliperaa" target="_blank" title="Instagram">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" style="width: 48px; height: 48px;">
+                    </a>
+                    <a href="mailto:email.do.felipe@exemplo.com" target="_blank" title="Email">
+                        <img src="https://cdn-icons-png.flaticon.com/512/60/60543.png" alt="Email" style="width: 48px; height: 48px;">
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <div id="code-modal" class="modal-backdrop">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <h2>Código-Fonte: Projeto Na Estrada</h2>
+            <pre class="code-block"><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;pt-BR&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;title&gt;P&ecirc; na Estrada&lt;/title&gt;
+    &lt;style&gt;
+        :root {
+            --primary-gradient: linear-gradient(45deg, #ff6b3d, #4CAF50);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            transition: all 0.3s ease;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            line-height: 1.6;
+        }
+
+        /* Header e Navega&ccedil;&atilde;o */
+        header {
+            background: var(--primary-gradient);
+            padding: 1rem;
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            color: white;
+            font-size: 2rem;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .nav-menu {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .nav-link {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 0.5rem 1rem;
+            border-radius: 25px;
+        }
+
+        .nav-link:hover {
+            background: rgba(255,255,255,0.2);
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            background: url('https://images.unsplash.com/photo-1528181304800-259b08848526?q=80&amp;w=1470&amp;auto=format&amp;fit=crop') center/cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            position: relative;
+            animation: slideShow 20s infinite;
+        }
+
+        @keyframes slideShow {
+            0%, 33% {
+                background-image: url('https://images.unsplash.com/photo-1528181304800-259b08848526?q=80&amp;w=1470&amp;auto=format&amp;fit=crop');
+            }
+            34%, 66% {
+                background-image: url('https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?q=80&amp;w=1439&amp;auto=format&amp;fit=crop');
+            }
+            67%, 100% {
+                background-image: url('https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?q=80&amp;w=1470&amp;auto=format&amp;fit=crop');
+            }
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0,0,0,0.5);
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+        }
+
+        .cta-button {
+            background: var(--primary-gradient);
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        }
+
+        /* Se&ccedil;&otilde;es de Destinos */
+        .destinations {
+            padding: 5rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .destination-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .destination-card {
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .destination-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 1.5rem;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--primary-gradient);
+            color: white;
+            padding: 3rem 2rem;
+            text-align: center;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .social-links a {
+            color: white;
+            font-size: 1.5rem;
+        }
+
+        /* Anima&ccedil;&otilde;es */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .animate-fade-in {
+            animation: fadeIn 1s ease forwards;
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            .nav-menu {
+                display: none;
+            }
+
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;header&gt;
+        &lt;nav class=&quot;nav-container&quot;&gt;
+            &lt;a href=&quot;#&quot; class=&quot;logo&quot;&gt;P&ecirc; na Estrada&lt;/a&gt;
+            &lt;div class=&quot;nav-menu&quot;&gt;
+                &lt;a href=&quot;#destinos&quot; class=&quot;nav-link&quot;&gt;Destinos&lt;/a&gt;
+                &lt;a href=&quot;#sobre&quot; class=&quot;nav-link&quot;&gt;Sobre&lt;/a&gt;
+                &lt;a href=&quot;#contato&quot; class=&quot;nav-link&quot;&gt;Contato&lt;/a&gt;
+                &lt;a href=&quot;#blog&quot; class=&quot;nav-link&quot;&gt;Blog&lt;/a&gt;
+            &lt;/div&gt;
+        &lt;/nav&gt;
+    &lt;/header&gt;
+
+    &lt;main&gt;
+        &lt;section class=&quot;hero&quot;&gt;
+            &lt;div class=&quot;hero-content animate-fade-in&quot;&gt;
+                &lt;h1&gt;Explore o Mundo Com a gente!&lt;/h1&gt;
+                &lt;p&gt;Descubra destinos incr&iacute;veis e viva experi&ecirc;ncias inesquec&iacute;veis&lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/section&gt;
+
+        &lt;section id=&quot;destinos&quot; class=&quot;destinations&quot;&gt;
+            &lt;h2&gt;Pr&oacute;ximos Destinos&lt;/h2&gt;
+            &lt;div class=&quot;destination-grid&quot;&gt;
+                &lt;!-- Repetir este card para cada destino --&gt;
+                &lt;div class=&quot;destination-card animate-fade-in&quot;&gt;
+                    &lt;img src=&quot;https://images.unsplash.com/photo-1528181304800-259b08848526&quot; alt=&quot;Festival das Lanternas na Tail&acirc;ndia - Pessoas soltando lanternas de papel no c&eacute;u noturno durante o Festival Yi Peng&quot;&gt;
+                    &lt;div class=&quot;card-content&quot;&gt;
+                        &lt;h3&gt;Festival Das Lanternas Tail&acirc;ndia&lt;/h3&gt;
+                        &lt;p&gt;02 a 16 de novembro 2025&lt;/p&gt;
+                        &lt;div style=&quot;margin-top: 20px;&quot;&gt;
+                            &lt;a href=&quot;#&quot; class=&quot;cta-button&quot;&gt;Saiba Mais&lt;/a&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/section&gt;
+    &lt;/main&gt;
+
+    &lt;footer&gt;
+        &lt;div class=&quot;footer-content&quot;&gt;
+            &lt;h3&gt;P&ecirc; na Estrada&lt;/h3&gt;
+            &lt;p&gt;Transformando sonhos em viagens inesquec&iacute;veis&lt;/p&gt;
+            &lt;div class=&quot;social-links&quot;&gt;
+                &lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fab fa-instagram&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+                &lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fab fa-facebook&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+                &lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fab fa-twitter&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/footer&gt;
+
+    &lt;script&gt;
+        // Anima&ccedil;&atilde;o suave do scroll
+        document.querySelectorAll('a[href^=&quot;#&quot;]').forEach(anchor =&gt; {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Anima&ccedil;&atilde;o dos elementos ao scroll
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) =&gt; {
+            entries.forEach(entry =&gt; {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-fade-in');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.destination-card').forEach(card =&gt; {
+            observer.observe(card);
+        });
+    &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;pt-BR&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;title&gt;Festival 2025&lt;/title&gt;
+    &lt;style&gt;
+        .festival-section {
+            padding: 80px 0;
+            background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+            color: white;
+        }
+
+        .festival-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .festival-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .festival-header h2 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+
+        .festival-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .festival-card {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 25px;
+            backdrop-filter: blur(5px);
+            transition: transform 0.3s ease;
+        }
+
+        .festival-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .festival-card h3 {
+            font-size: 1.5em;
+            margin-bottom: 15px;
+        }
+
+        .festival-card p {
+            line-height: 1.6;
+        }
+
+        .festival-cta {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .festival-button {
+            display: inline-block;
+            padding: 15px 30px;
+            background: white;
+            color: #ff6b6b;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        .festival-button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;section class=&quot;festival-section&quot;&gt;
+        &lt;div class=&quot;festival-container&quot;&gt;
+            &lt;div class=&quot;festival-header&quot;&gt;
+                &lt;h2&gt;Festival 2025&lt;/h2&gt;
+                &lt;p&gt;Uma experi&ecirc;ncia &uacute;nica de m&uacute;sica, arte e cultura&lt;/p&gt;
+            &lt;/div&gt;
+            
+            &lt;div class=&quot;festival-grid&quot;&gt;
+                &lt;div class=&quot;festival-card&quot;&gt;
+                    &lt;h3&gt;Atra&ccedil;&otilde;es Principais&lt;/h3&gt;
+                    &lt;p&gt;Lan&ccedil;amento de Lanternas: A principal atra&ccedil;&atilde;o do festival &eacute; o lan&ccedil;amento de lanternas de papel, que iluminam o c&eacute;u noturno. Este ato simboliza a libera&ccedil;&atilde;o de preocupa&ccedil;&otilde;es e a realiza&ccedil;&atilde;o de desejos.&lt;/p&gt;
+                &lt;/div&gt;
+                
+                &lt;div class=&quot;festival-card&quot;&gt;
+                    &lt;h3&gt;Programa&ccedil;&atilde;o&lt;/h3&gt;
+                    &lt;p&gt;1. Oferendas em Templos&lt;br&gt;
+                       2. Desfiles Culturais&lt;br&gt;
+                       3. Experi&ecirc;ncias Gastron&ocirc;micas&lt;br&gt;
+                       4. Loy Krathong&lt;br&gt;
+                       5. Lan&ccedil;amento de Lanternas&lt;/p&gt;
+                &lt;/div&gt;
+                
+                &lt;div class=&quot;festival-card&quot;&gt;
+                    &lt;h3&gt;Informa&ccedil;&otilde;es&lt;/h3&gt;
+                    &lt;p&gt;Local, datas e hor&aacute;rios ser&atilde;o atualizados conforme as informa&ccedil;&otilde;es do documento oficial.&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            
+            &lt;div class=&quot;festival-cta&quot;&gt;
+                &lt;button onclick=&quot;showSignupModal()&quot; class=&quot;festival-button&quot;&gt;QUERO!&lt;/button&gt;
+            &lt;/div&gt;
+
+            &lt;!-- Modal de Cadastro --&gt;
+            &lt;div id=&quot;signupModal&quot; class=&quot;modal&quot; style=&quot;display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5); z-index: 1000;&quot;&gt;
+                &lt;div class=&quot;modal-content&quot; style=&quot;background: white; width: 90%; max-width: 500px; margin: 50px auto; padding: 20px; border-radius: 8px;&quot;&gt;
+                    &lt;span onclick=&quot;closeSignupModal()&quot; style=&quot;float: right; cursor: pointer; font-size: 24px;&quot;&gt;&amp;times;&lt;/span&gt;
+                    &lt;h2&gt;Cadastre-se para participar&lt;/h2&gt;
+                    &lt;form id=&quot;signupForm&quot; style=&quot;display: flex; flex-direction: column; gap: 15px;&quot;&gt;
+                        &lt;input type=&quot;text&quot; placeholder=&quot;Nome completo&quot; required style=&quot;padding: 10px; border: 1px solid #ddd; border-radius: 4px;&quot;&gt;
+                        &lt;input type=&quot;email&quot; placeholder=&quot;E-mail&quot; required style=&quot;padding: 10px; border: 1px solid #ddd; border-radius: 4px;&quot;&gt;
+                        &lt;input type=&quot;tel&quot; placeholder=&quot;Telefone&quot; required style=&quot;padding: 10px; border: 1px solid #ddd; border-radius: 4px;&quot;&gt;
+                        &lt;button type=&quot;submit&quot; class=&quot;festival-button&quot; style=&quot;width: 100%;&quot;&gt;Continuar&lt;/button&gt;
+                    &lt;/form&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+
+            &lt;script&gt;
+                function showSignupModal() {
+                    document.getElementById('signupModal').style.display = 'block';
+                }
+
+                function closeSignupModal() {
+                    document.getElementById('signupModal').style.display = 'none';
+                }
+
+                document.getElementById('signupForm').addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    alert('Cadastro recebido! Entraremos em contato em breve.');
+                    closeSignupModal();
+                });
+            &lt;/script&gt;
+        &lt;/div&gt;
+    &lt;/section&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+        </div>
+    </div>
+    
+    <script src="js/script.js"></script>
+
+</body>
+</html>
