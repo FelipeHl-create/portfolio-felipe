@@ -331,4 +331,38 @@ nav a:hover {
     .code-block {
         font-size: 0.8rem; /* Fonte do código um pouco menor */
     }
+
+}
+
+/*
+============================================================
+  ESTILO PARA BOTÕES DE PROJETOS
+============================================================
+*/
+
+.btn-ver-projeto {
+    display: inline-block; /* Garante que o botão se comporte corretamente */
+    padding: 10px 22px; /* Espaçamento interno (altura e largura) */
+    margin-top: 1rem; /* Espaço acima do botão */
+    
+    /* Estilo visual para combinar */
+    background-color: transparent; /* Fundo transparente */
+    border: 2px solid #2D9094;  /* Borda com a cor azul-petróleo */
+    border-radius: 5px; /* Bordas levemente arredondadas */
+    color: #2D9094; /* Cor do texto igual à da borda */
+
+    /* Efeitos e Fonte */
+    text-decoration: none; /* Remove o sublinhado do link */
+    font-family: 'Roboto', sans-serif; /* Usa a mesma fonte do seu site */
+    font-weight: bold;
+    text-align: center;
+    transition: all 0.3s ease; /* Animação suave para o efeito hover */
+    cursor: pointer; /* Mostra a mãozinha ao passar o mouse */
+}
+
+/* Efeito ao passar o mouse por cima do botão */
+.btn-ver-projeto:hover {
+    background-color: #2D9094; /* Preenche o fundo com a cor de destaque */
+    color: #FFFFFF;             /* Deixa o texto branco */
+    transform: translateY(-3px); /* Leve efeito de "levantar" */
 }
