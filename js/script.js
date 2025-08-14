@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (elementH1) {
         function showText(element, text, interval) {
+            element.innerHTML = '';
             const char = text.split("").reverse();
             const typer = setInterval(() => {
                 if (!char.length) {
@@ -41,5 +42,6 @@ document.addEventListener('DOMContentLoaded', () => {
           }
         }
     }
+
 
 });
